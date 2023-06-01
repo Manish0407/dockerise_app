@@ -1,0 +1,2 @@
+module BxBlockAccounts::AccountsHelper
+end

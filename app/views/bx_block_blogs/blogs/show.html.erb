@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @bx_block_blogs_blog %>
+
+<div>
+  <%= link_to "Edit this blog", edit_bx_block_blogs_blog_path(@bx_block_blogs_blog) %> |
+  <%= link_to "Back to blogs", bx_block_blogs_blogs_path %>
+
+  <%= button_to "Destroy this blog", @bx_block_blogs_blog, method: :delete %>
+</div>

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @bx_block_accounts_account %>
+
+<div>
+  <%= link_to "Edit this account", edit_bx_block_accounts_account_path(@bx_block_accounts_account) %> |
+  <%= link_to "Back to accounts", bx_block_accounts_accounts_path %>
+
+  <%= button_to "Destroy this account", @bx_block_accounts_account, method: :delete %>
+</div>

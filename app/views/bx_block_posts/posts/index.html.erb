@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Posts</h1>
+
+<div id="bx_block_posts_posts">
+  <% @bx_block_posts_posts.each do |bx_block_posts_post| %>
+    <%= render bx_block_posts_post %>
+    <p>
+      <%= link_to "Show this post", bx_block_posts_post %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New post", new_bx_block_posts_post_path %>

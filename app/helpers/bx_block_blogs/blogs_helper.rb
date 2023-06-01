@@ -1,0 +1,2 @@
+module BxBlockBlogs::BlogsHelper
+end

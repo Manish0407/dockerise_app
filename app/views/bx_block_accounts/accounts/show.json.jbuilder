@@ -1,0 +1,1 @@
+json.partial! "bx_block_accounts_accounts/bx_block_accounts_account", bx_block_accounts_account: @bx_block_accounts_account

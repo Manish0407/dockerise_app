@@ -1,0 +1,32 @@
+<%= form_with(model: bx_block_accounts_account) do |form| %>
+  <% if bx_block_accounts_account.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(bx_block_accounts_account.errors.count, "error") %> prohibited this bx_block_accounts_account from being saved:</h2>
+
+      <ul>
+        <% bx_block_accounts_account.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :username, style: "display: block" %>
+    <%= form.text_field :username %>
+  </div>
+
+  <div>
+    <%= form.label :email, style: "display: block" %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div>
+    <%= form.label :password_digest, style: "display: block" %>
+    <%= form.text_field :password_digest %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

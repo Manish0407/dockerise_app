@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Blogs</h1>
+
+<div id="bx_block_blogs_blogs">
+  <% @bx_block_blogs_blogs.each do |bx_block_blogs_blog| %>
+    <%= render bx_block_blogs_blog %>
+    <p>
+      <%= link_to "Show this blog", bx_block_blogs_blog %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New blog", new_bx_block_blogs_blog_path %>

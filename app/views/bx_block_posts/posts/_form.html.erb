@@ -1,0 +1,32 @@
+<%= form_with(model: bx_block_posts_post) do |form| %>
+  <% if bx_block_posts_post.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(bx_block_posts_post.errors.count, "error") %> prohibited this bx_block_posts_post from being saved:</h2>
+
+      <ul>
+        <% bx_block_posts_post.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :title, style: "display: block" %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :content, style: "display: block" %>
+    <%= form.text_area :content %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,2 @@
+module BxBlockPosts::PostsHelper
+end
